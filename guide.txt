@@ -1,0 +1,69 @@
+# Predictive Modeling of Signal Peptides in Protein Sequences
+
+## Author: Erfan Zohrabi (Erfanzohrabi.ez@gmail.com)
+
+### **Project Overview**
+
+This project leverages machine learning to predict the presence of signal peptides in protein sequences using a Support Vector Machine (SVM) model. Signal peptides are short amino acid sequences that direct proteins to specific cellular locations, crucial for determining protein function and localization. Accurate prediction of these peptides can help advance understanding in areas such as cellular biology, protein engineering, and therapeutic protein production.
+
+### **Key Features**
+- **Data Normalization**: Ensures consistent data scaling, improving the performance and reliability of the model.
+- **SVM-Based Classification**: Uses an SVM model to classify sequences as containing signal peptides or not, offering a powerful binary classification tool.
+- **Cross-Validation**: Implements cross-validation to ensure the model generalizes well to new, unseen data, minimizing the risk of overfitting.
+- **Streamlined Pipeline**: Provides a structured workflow covering all stages from data loading, feature extraction, model training, to evaluation.
+
+### **Repository Structure**
+
+The project repository is well organized, with each script corresponding to a key task in the modeling pipeline:
+
+- **`data_loading.py`**: Loads positive and negative protein sequences from `.tsv` files.
+- **`data_normalization.py`**: Normalizes dataset features to ensure consistency.
+- **`feature_extraction.py`**: Extracts features from protein sequences using vectorization methods.
+- **`model_training.py`**: Trains the SVM model, utilizing cross-validation and hyperparameter optimization.
+- **`model_testing.py`**: Tests the trained model against a separate dataset to validate accuracy.
+- **`model_evaluation.py`**: Evaluates model performance using metrics such as accuracy, precision, recall, F1 score, and generates a detailed classification report.
+
+### **Data Description**
+- **Positive Sequences**: Protein sequences that contain known signal peptides, including cleavage site information.
+- **Negative Sequences**: Protein sequences without any signal peptides.
+- **Preprocessing**: The data undergoes preprocessing to normalize features and extract meaningful information to enhance prediction accuracy.
+
+### **Model Evaluation**
+
+The performance of the model is assessed comprehensively using:
+- **Accuracy**: The proportion of correctly predicted sequences.
+- **Precision**: The accuracy of positive predictions.
+- **Recall**: The proportion of actual positives that are correctly predicted.
+- **F1 Score**: A harmonic mean of precision and recall to give a balanced evaluation.
+- **Classification Report**: A detailed report summarizing model performance.
+
+### **Contribution and Acknowledgements**
+
+Contributions to this project are highly encouraged. Anyone interested can open issues, submit pull requests, or reach out directly to the author for further collaboration. Special thanks to the researchers and developers at Unibo LB2 for providing the datasets used in this project.
+
+### **Real-World Applications**
+- **Drug Development**: Predicting signal peptides helps identify target proteins for drug transport or secretion.
+- **Protein Engineering**: Assists in designing engineered proteins for better cellular localization.
+- **Bioinformatics Research**: Facilitates analysis related to cellular localization, improving the understanding of protein function.
+
+### **How to Get Started**
+1. **Clone the Repository**: Clone the repository and create a virtual environment.
+   ```
+   git clone https://github.com/ErfanZohrabi/Predictive-Modeling-of-Signal-Peptides-in-Protein-Sequences.git
+   cd Predictive-Modeling-of-Signal-Peptides-in-Protein-Sequences
+   python -m venv env
+   source env/bin/activate
+   ```
+2. **Install Dependencies**: Install all required Python packages.
+   ```
+   pip install -r requirements.txt
+   ```
+3. **Run the Scripts**: Follow the order of the scripts to replicate the workflow: data loading, normalization, feature extraction, model training, testing, and evaluation.
+
+### **Key Quotes**
+- "This project uses machine learning to predict signal peptides in protein sequences. It features data normalization, SVM-based classification, and cross-validation to ensure reliable signal peptide detection, creating a streamlined, effective prediction pipeline."
+- "The model is evaluated using accuracy, precision, recall, F1 score, and a detailed classification report."
+
+### **Summary**
+This project represents a robust and systematic approach to predict signal peptides in protein sequences using machine learning. The use of data preprocessing, model validation, and thorough evaluation ensures high reliability and applicability of the prediction model. Researchers and bioinformatics enthusiasts can leverage this framework to enhance their studies in protein localization and function. Collaboration is welcomed, and the project is open for contributions to further improve the methods and extend the model's capabilities.
+
