@@ -5,7 +5,7 @@ This project uses machine learning to predict signal peptides in protein sequenc
 
 ## Overview
 
-This project is a comprehensive machine learning pipeline for analyzing biological sequences. It involves loading data, normalizing and scaling features, extracting relevant features, training an SVM model, testing the model, and evaluating its performance using key metrics such as accuracy, precision, recall, and F1 score.
+This project is a comprehensive machine-learning pipeline for analyzing biological sequences. It involves loading data, normalizing and scaling features, extracting relevant features, training an SVM model, testing the model, and evaluating its performance using key metrics such as accuracy, precision, recall, and F1 score.
 
 The key components of the project include:
 1. **Loading Data**: Reading and preprocessing data from `.tsv` files containing biological sequence data.
@@ -113,7 +113,7 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 Contributions are welcome! If you find any bugs or have suggestions for improvement, please open an issue or submit a pull request.
 
 ## Contact
-If you have any questions or need further information, feel free to contact the project maintainer at [your_email@example.com].
+If you have any questions or need further information, feel free to contact the project maintainer at [Erfanzohrabi.ez@gmail.com].
 
 ## Acknowledgements
 This project was developed using data provided by [Unibo LB2]. We would like to thank the researchers and developers who contributed to the data collection and pre-processing.
